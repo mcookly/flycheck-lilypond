@@ -50,7 +50,7 @@
    (error line-start (file-name) ":" line ": error: " (message) line-end)
    (warning line-start (file-name) ":" line ":" column ": warning: " (message) line-end)
    (warning line-start (file-name) ":" line ": warning: " (message) line-end))
-  :modes LilyPond-mode)
+  :modes (LilyPond-mode lilypond-ts-mode))
 
 (add-to-list 'flycheck-checkers 'lilypond)
 
